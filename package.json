@@ -1,6 +1,6 @@
 {
   "name": "enc-prime",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a large pkg",
   "main": "index.js",
   "scripts": {},
