@@ -1,7 +1,8 @@
 const crypto = require('crypto');
 
 class Encrypt {
-    morse = (text, { xpattle, reverse = false }) => {
+    morse = (text, reverse = false) => {
+        text = String(text);
         const pattle = {
             A: ".-",
             B: "-...",
@@ -56,7 +57,6 @@ class Encrypt {
             _: "..--.-",
             $: "...-..-",
             "@": ".--.-.",
-            ...xpattle // دمج الـ xpattle مع الـ pattle الرئيسي
         }
 
         if (reverse) {
